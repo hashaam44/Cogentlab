@@ -1,121 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cogent-labs</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="https://cogentlabs.co/static/css/assets/favicon.ico">
-  <link href="./Cogent Labs_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./Cogent Labs_files/App.css">
-  <script defer="" src="./Cogent Labs_files/bootstrap.bundle.min.js.download" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" type="text/css" href="./Cogent Labs_files/formbuilder.css">
-  <link rel="preload" href="https://cogentlabs.co/static/css/font/SF-Pro-Display-Regular.woff" as="font" type="font/woff" crossorigin="">
-
-  
+    <title>Sidebar Menu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="">
-    <div class="header">
-      <div class="custom-container">
-        <nav class="navbar">
-          <a href="" class="logo">
-            <img src="images/cogentlabs.png" alt="">
-          </a>
-          <ul>
-            <li class="nav-item"><a href="/">Services</a></li>
-            <li class="nav-item"><a href="">About us</a></li>
-            <li class="nav-item"><a href="">Careers</a></li>
-          </ul>
-          <a href="" class="btn btn-primary">Book a Consultation</a>
-          
-          
-          <div class="menu-toggle">
-
-            <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </div>
-</nav>
-       
-        <div class="menu">
-        <div class="responsive-nav">
-          <div class="nav-header">
-            <a href="">
-              <div class="image-wrapper" style="margin-top: -5%;">
-                <img src="images/cogentlabs.png" alt="" srcset="" style="background-color: aliceblue; border-radius: 5em;width: 180px;">
-              </div>
-            </a>
-           
-            <ul class="nav-links">
-            <a href="">
-              <div class="image-wrapper">
-                <img src="images/cogentlabs.png" alt="" srcset="" style="background-color: aliceblue; border-radius: 5em;width: 180px;">
-              </div>
-            </a>
-        
-          
-              <li>
-                <div class="list-item">
-                  <div class="img-wrapper">
-                    <img src="/media/svg/Services.svg">
-                  </div>
-                    <a class="Services" href=" /services/ ">
-                        Services
-                    </a>
-                </div>
-              </li>
-                
-            
-              
-              <li>
-                <div class="list-item">
-                  <div class="img-wrapper">
-                    <img src="/media/svg/About_us.svg">
-                  </div>
-                    <a class="Aboutus" href=" /about-us/ ">
-                        About us
-                    </a>
-                </div>
-              </li>
-                
-            
-              
-              <li>
-                <div class="list-item">
-                  <div class="img-wrapper">
-                    <img src="/media/svg/Career.svg">
-                  </div>
-                    <a class="Careers" href=" https://cogent-labs.hirestream.io/careers/ ">
-                        Careers
-                    </a>
-                </div>
-              </li>
-                
-            
-            
-              <div class="consultation-btn">
-                
-                   <a href="https://calendly.com/ehmadzubair/cogent-labs-free-consultation" class="btn btn-primary" target="_blank">
-                      
-                        Book a Consultation
-                      
-                  </a>
-                </ul>
-            
-                </div>
-              </div>
-        </div>
-      </div>
+<body>
+    <div class="menu-icon" onclick="toggleSidebar()">
+        ☰
     </div>
-    
-          
-        
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="Cogent Labs">
+        </div>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#">
+                    <img src="services-icon.png" alt="Services Icon">
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#">
+                    <img src="about-us-icon.png" alt="About Us Icon">
+                    <span>About us</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#">
+                    <img src="careers-icon.png" alt="Careers Icon">
+                    <span>Careers</span>
+                </a>
+            </li>
+        </ul>
+        <div class="book-consultation">
+            <button>Book a Consultation</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
-
 </html>
