@@ -5,7 +5,7 @@ body {
 }
 
 button {
-    background: none;
+    background: black;
     border: none;
     cursor: pointer;
     width: 30px;
