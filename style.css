@@ -1,111 +1,77 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #000;
-}
-
-.menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-}
-
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #111;
-    padding: 20px;
-    box-sizing: border-box;
-    position: fixed;
-    left: -250px;
-    transition: 0.3s;
-}
-
-.sidebar.show {
-    left: 0;
-}
-
-.logo {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.logo img {
-    width: 150px;
-}
-
-.menu {
-    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
-.menu-item {
-    margin-bottom: 20px;
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
 }
 
-.menu-item a {
-    text-decoration: none;
+.bar {
+    background: url('path_to_hamburger_icon.png') no-repeat center center;
+    background-size: contain;
+}
+
+.arrow {
+    background: url('path_to_arrow_icon.png') no-repeat center center;
+    background-size: contain;
+}
+
+.menu {
+    width: 250px;
+    height: 100vh;
+    background-color: #000;
     color: #fff;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s;
+}
+
+.menu.open {
+    left: 0;
+}
+
+.menu .logo {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
     display: flex;
     align-items: center;
 }
 
-.menu-item a img {
-    width: 20px;
+.menu ul li a img {
     margin-right: 10px;
 }
 
-.menu-item a span {
-    font-size: 18px;
-}
-
-.book-consultation {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.book-consultation button {
-    background: linear-gradient(90deg, #1e90ff, #ff69b4);
+.book-btn {
+    background: linear-gradient(to right, #00f, #f0f);
     border: none;
-    color: white;
+    color: #fff;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    margin: 20px;
     cursor: pointer;
-    border-radius: 20px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 200px;
-    }
-
-    .sidebar.show {
-        width: 200px;
-    }
-
-    .menu-icon {
-        font-size: 25px;
-    }
-
-    .logo img {
-        width: 120px;
-    }
-
-    .menu-item a img {
-        width: 18px;
-    }
-
-    .menu-item a span {
-        font-size: 16px;
-    }
+    display: block;
+    width: calc(100% - 40px);
+    text-align: center;
 }
