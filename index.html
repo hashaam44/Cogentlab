@@ -3,42 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar Menu</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Toggle Menu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="menu-icon" onclick="toggleSidebar()">
-        ☰
-    </div>
-    <div class="sidebar" id="sidebar">
+    <button id="toggleButton" class="bar" onclick="toggleMenu()"></button>
+    <div id="menu" class="menu">
         <div class="logo">
-            <img src="logo.png" alt="Cogent Labs">
+            <img src="path_to_logo.png" alt="Cogent Labs">
         </div>
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="#">
-                    <img src="services-icon.png" alt="Services Icon">
-                    <span>Services</span>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#">
-                    <img src="about-us-icon.png" alt="About Us Icon">
-                    <span>About us</span>
-                </a>
-            </li>
-            <li class="menu-item">
-                <a href="#">
-                    <img src="careers-icon.png" alt="Careers Icon">
-                    <span>Careers</span>
-                </a>
-            </li>
+        <ul>
+            <li><a href="#services"><img src="path_to_services_icon.png" alt="Services"> Services</a></li>
+            <li><a href="#about"><img src="path_to_about_icon.png" alt="About us"> About us</a></li>
+            <li><a href="#careers"><img src="path_to_careers_icon.png" alt="Careers"> Careers</a></li>
         </ul>
-        <div class="book-consultation">
-            <button>Book a Consultation</button>
-        </div>
+        <button class="book-btn">Book a Consultation</button>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
